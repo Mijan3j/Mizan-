@@ -27,7 +27,7 @@ config: {
 
     var JOY = Messages[Math.floor(Math.random() * Messages.length)]
   
-  if (event.body.indexOf("Bot") == 0 || (event.body.toLowerCase() == "বট") || (event.body.indexOf("bot") == 0)) {
+  if (event.body.indexOf("MIM") == 0 || (event.body.toLowerCase() == "mim") || (event.body.indexOf("Mim") == 0)) {
     var msg = {
       body: ` ${JOY}`
     }
