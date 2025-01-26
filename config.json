@@ -43,27 +43,27 @@
 
 
   "adminBot": [
-    "61568646922201"
+    "yi.tlommlamrlm.jlamml"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "61568646922201"
+      "yi.tlommlamrlm.jlamml"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "JOY-BOT",
+  "nickNameBot": "MIM-BOT",
   "prefix": ".",
   "ArYanapi": "https://aryan-rest-api.onrender.com",
   "api": "",
   "api2": "",
   "api3": "",
   "authorName": "Joy Ahmed",
-  "facebook2": "https://www.facebook.com/profile.php?id=100000121528628",
-  "facebook": "https://www.facebook.com/profile.php?id=100000121528628",
-  "email": "joyahmedtt@gmail.com",
+  "facebook2": "https://www.facebook.com/yi.tlommlamrlm.jlamml",
+  "facebook": "yi.tlommlamrlm.jlamml",
+  "email": "nai",
   "replit": "Off",
-  "github": "https://github.com/joy",
+  "github": "nai",
   "insta": "no",
   "age": "18+",
   "TG": "",
