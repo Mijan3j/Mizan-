@@ -43,12 +43,12 @@
 
 
   "adminBot": [
-    "yi.tlommlamrlm.jlamml"
+    "61571492330146"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "yi.tlommlamrlm.jlamml"
+      "61571492330146"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
