@@ -1,22 +1,31 @@
+const fs = require("fs");
 module.exports = {
- config: {
-	 name: "😡",
-	 version: "1.0",
-	 author: "Joy-ahmed",
-	 countDown: 5,
-	 role: 0,
-	 shortDescription: "no prefix",
-	 longDescription: "no prefix",
-	 category: "no prefix",
- },
+  config:{
+	name: "🤬",
+        version: "1.0.1",
+        prefix: false,
+	permssion: 0,
+	credits: "nayan", 
+	description: "Fun",
+	category: "no prefix",
+	usages: "🤬",
+        cooldowns: 5, 
+},
 
- onStart: async function(){}, 
- onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "😡") {
- return message.reply({
- body: "     「𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥\n𝗠𝗗 𝐑𝐀𝐊𝐈𝐁 𝐀𝐍𝐃 𝐌𝐈𝐙𝐀𝐍」",
- attachment: await global.utils.getStreamFromURL("https://drive.google.com/file/d/1yHyvYINbVcquu8vMw-1QRa9jYDdyA0jm/view?usp=drivesdk")
- });
- }
- }
+handleEvent: function({ api, event, client, __GLOBAL }) {
+	var { threadID, messageID } = event;
+  const content = event.body ? event.body : '';
+  const body = content.toLowerCase();
+	if (body.indexOf("😈")==0 || body.indexOf("😡")==0 || body.indexOf("🤬")==0 || body.indexOf("😾")==0) {
+		var msg = {
+				body: "এতো রাগ ষুদাও কেনুহহ 😞🤥👊🏻",
+				attachment: fs.createReadStream(__dirname + `/assets/😡😡.mp3`)
+			}
+			api.sendMessage( msg, threadID, messageID);
+    api.setMessageReaction("😹", event.messageID, (err) => {}, true)
+		}
+	},
+	start: function({ assets }) {
+
+  }
 }
